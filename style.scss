@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    max-height: 80vh; 
+    font-family: "Cascadia Code", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(0, 0, 0);
+    scroll-behavior:smooth;
+}
+
+.header-nav {
+    display: flex;
+    background-color: #272727; 
+    justify-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    
+    .org-name {
+        font-size: 25px;
+        padding: 1em;
+        color: wheat;
+    }
+    ul {
+        display: flex;
+        padding: 1em 0em 1em 20em;
+        list-style-type: none;
+        font-size: 25px;
+        li{
+            padding: 0 2em;
+            text-decoration: none;
+
+            a{
+                color: wheat;
+            }
+            a:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #banner_image {
+    image-rendering: optimizeQuality;
+        h1 {
+            color: white;
+            position: absolute;
+            top: 5em;
+            left: 5em;
+            font-size: 2em;
+        }
+        h1:hover {
+            color: #6c63ff;
+            cursor: none;
+        }
+        img{
+            top: 10em;
+            left: 45em;
+            position: absolute;
+            width: 400px;
+        }
+    }
+    .find {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: absolute;
+        border-radius: 5px;
+        padding: 1em;
+        left: 7em;
+        top: 15em;
+        background-color: rgba(190, 190, 190, 0.089);
+        span {
+            font-size: 1.5em;
+            color: white;
+        }
+        .input {
+            label {
+                font-size: 1;
+                padding-left: 1em;
+                color: whitesmoke;
+            }
+            label:hover {
+                color: red;
+            }
+        }
+        .dropdown {
+           
+            #cars {
+                border-radius: 5px;
+                width: 250px;
+                height: 30px;
+                border-style: none;
+                outline: none;
+                background-color: #303030;
+                color: honeydew;
+            }
+        }
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            #search {
+                border-radius: 10px;
+                width: 150px;
+                height: 30px;
+                border-style: none;
+            }
+            #search:hover{
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+}
+
+.car_details_1 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5em;
+    
+    .car_1 {
+        .img_1 {
+            color: white;
+            img {
+                width: 350px;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+        p {
+            opacity: 1;
+            color: black;
+        }
+        .img_1:hover {
+            box-shadow: 0px 30px  #ffffff;
+            transition: linear 200ms ;
+            border-radius: 0px;
+        }
+
+        .button {
+            background-color: #7b73ff;
+            border-style: none;
+            border-radius: 20px;
+            margin-top: 3em;
+            width: 8em;
+            height: 3em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: white;
+            transition: linear 100ms;
+        }
+    }
+}
+
+.car_details_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+    
+    .car_2 {
+        .img_1 {
+            color: white;
+            img {
+                width: 350px;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+        p {
+            opacity: 1;
+            color: black;
+        }
+        .img_1:hover {
+            box-shadow: 0px 30px  #ffffff;
+            transition: linear 200ms;
+            border-radius: 0px;
+        }
+
+        .button {
+            background-color: #7b73ff;
+            border-style: none;
+            border-radius: 20px;
+            margin-top: 3em;
+            width: 8em;
+            height: 3em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: white;
+            transition: linear 100ms;
+        }
+    }
+}
+
+.contact {
+    padding: 2em;
+    background-color: #303030;
+    p{
+        color: wheat;
+    }
+}
